@@ -5,7 +5,7 @@ Spring:
     config:
       server:
         git:
-          default-label: config-server #nombre de la rama  de git donde esta el config-server
+          default-label: eureka #config-server nombre de la rama  de git donde esta el config-server
           uri: https://github.com/mas2401master/microservice-spring-boot #url de git del proyecto 
           search-paths: config-data #direccion donde estan los archivos de configuracion de cada microservicio
   application:
