@@ -17,17 +17,17 @@ spring:
           enabled: true
       routes:
         - id: usuario-service
-          #uri: lb://usuario-service
-          uri: http://localhost:8001
+          uri: lb://usuario-service
+          #uri: http://localhost:8001
           predicates:
             - Path=/usuario/**
         - id: carro-service
-          #uri: lb://carro-service
-          uri: http://localhost:8002
+          uri: lb://carro-service
+          #uri: http://localhost:8002
           predicates:
             - Path=/carro/**
         - id: moto-service
-          #uri: lb://moto-service
-          uri: http://localhost:8003
+          uri: lb://moto-service
+          #uri: http://localhost:8003
           predicates:
             - Path=/moto/**

@@ -1,6 +1,6 @@
 server:
-  port: 8001
-  #port: ${PORT:${SERVER_PORT:0}}
+  #port: 8001
+  port: ${PORT:${SERVER_PORT:0}}
 eureka:
   client:
     fetch-registry: true
@@ -8,8 +8,8 @@ eureka:
     service-url:
       default-zone: http://localhost:8761/eureka
     instance:
-      hostname: localhost
-      #instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+      #hostname: localhost
+      instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
 
 resilience4j.circuitbreaker:
   instances:
@@ -39,4 +39,4 @@ resilience4j.circuitbreaker:
       minimumNumberOfCalls: 4
       waitDurationInOpenState: 5s
       failureRateThreshold: 50
-      eventConsumerBufferSize: 10    
+      eventConsumerBufferSize: 10
