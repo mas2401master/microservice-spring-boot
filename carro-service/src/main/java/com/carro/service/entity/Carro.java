@@ -50,7 +50,4 @@ public class Carro {
 	public void setUsuarioId(int usuarioId) {
 		this.usuarioId = usuarioId;
 	}
-	
-	
-	
 }

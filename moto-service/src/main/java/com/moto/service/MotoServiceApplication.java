@@ -11,5 +11,4 @@ public class MotoServiceApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(MotoServiceApplication.class, args);
 	}
-
 }
